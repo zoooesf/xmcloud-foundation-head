@@ -1,0 +1,10 @@
+
+.background-blue{
+    @apply bg-blue-700;
+  }
+  .background-yellow{
+    @apply bg-yellow-600;
+  }
+  .background-green{
+    @apply bg-green-700;
+  }
