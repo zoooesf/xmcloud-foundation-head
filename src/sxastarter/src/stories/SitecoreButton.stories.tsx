@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from '@storybook/react';
 import { SitecoreButton } from '../components/SitecoreButton';
 import './sitecoreButton.css';
 const meta = {
-  title: 'Component/Button',
+  title: 'Components/Button',
   component: SitecoreButton,
   parameters: { layout: 'centered' },
   tags: ['autodocs'],
