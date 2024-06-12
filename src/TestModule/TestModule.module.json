@@ -1,0 +1,18 @@
+{
+    "namespace": "TestModule",
+    "items": {
+        "includes": [
+        {
+            "name": "plant include",
+            "path": "/sitecore/Content/sites/sxastarter/Home/Plants",
+            "rules": [  
+                {  
+                    "path": "/flowers",
+                    "scope": "ignored"    
+                }  
+                ] 
+        }
+        ]
+    }
+    
+}

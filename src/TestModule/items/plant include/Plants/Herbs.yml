@@ -1,0 +1,34 @@
+﻿---
+ID: "36cd8421-f957-4fac-ac08-721f0d7b0123"
+Parent: "66228448-1929-4108-b0f3-27f8bf48ba83"
+Template: "331426de-bbaf-4f84-ae82-58922c38bc7b"
+Path: /sitecore/content/sites/sxastarter/Home/Plants/Herbs
+SharedFields:
+- ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
+  Hint: __Thumbnail
+  Value: |
+    <image mediaid="{70150214-79E2-4CCD-92A4-3D5B90F78BE0}" />
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20240604T181018Z
+    - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
+      Hint: NavigationTitle
+      Value: Herbs
+    - ID: "76316f61-d5ba-4db6-bc87-1724ccd81581"
+      Hint: Title
+      Value: Herbs
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "fb5ac9d6-1f8b-4cda-8fc6-b0d7959a2a77"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\zferguson@getfishtank.ca
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240604T181018Z

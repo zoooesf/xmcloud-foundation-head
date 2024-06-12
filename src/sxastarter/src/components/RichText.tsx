@@ -1,6 +1,6 @@
 import React from 'react';
 import { Field, RichText as JssRichText } from '@sitecore-jss/sitecore-jss-nextjs';
-
+import '../assets/app.css';
 interface Fields {
   Text: Field<string>;
 }
@@ -20,10 +20,10 @@ export const Default = (props: RichTextProps): JSX.Element => {
 
   return (
     <div
-      className={`component rich-text ${props.params.styles.trimEnd()}`}
+      className={`component rich-text ${props.params.styles.trimEnd()}  bg-slate-50`}
       id={id ? id : undefined}
     >
-      <div className="component-content">{text}</div>
+      <div className="component-content underline">{text}</div>
     </div>
   );
 };

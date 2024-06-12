@@ -1,0 +1,34 @@
+﻿---
+ID: "80579b7d-c478-49d4-9747-ba75b74facc0"
+Parent: "66228448-1929-4108-b0f3-27f8bf48ba83"
+Template: "331426de-bbaf-4f84-ae82-58922c38bc7b"
+Path: /sitecore/content/sites/sxastarter/Home/Plants/Trees
+SharedFields:
+- ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
+  Hint: __Thumbnail
+  Value: |
+    <image mediaid="{840FE3CF-6095-4B31-BBF8-F5ECD335FA8B}" />
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20240604T181024Z
+    - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
+      Hint: NavigationTitle
+      Value: Trees
+    - ID: "76316f61-d5ba-4db6-bc87-1724ccd81581"
+      Hint: Title
+      Value: Trees
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "f74a92db-0569-4968-831e-261c1b16361e"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\zferguson@getfishtank.ca
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240604T181024Z
