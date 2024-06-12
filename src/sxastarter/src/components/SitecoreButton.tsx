@@ -1,39 +1,29 @@
 import React from 'react';
 import '../stories/sitecoreButton.css';
-import {
-  ComponentRendering,
-  Link,
-  LinkField,
-  withDatasourceCheck,
-} from '@sitecore-jss/sitecore-jss-nextjs';
+import { Link, LinkField, withDatasourceCheck } from '@sitecore-jss/sitecore-jss-nextjs';
+import { ComponentProps } from 'lib/component-props';
 
-export interface ButtonProps {
-  backgroundColor?: 'yellow' | 'blue' | 'green';
-  size?: 'small' | 'medium' | 'large';
-  disableState?: boolean;
-  link?: LinkField;
-  rendering: ComponentRendering;
-  onClick?: () => void;
-}
-export const SitecoreButton = ({
-  backgroundColor,
-  size = 'medium',
-  disableState,
-  link,
-  ...props
-}: ButtonProps): JSX.Element => {
-  const mode = disableState ? 'cursor-not-allowed' : 'cursor-pointer';
+type ButtonProps = ComponentProps & {
+  fields: {
+    backgroundColor?: 'yellow' | 'blue' | 'green';
+    size?: 'small' | 'medium' | 'large';
+    disableState?: boolean;
+    link?: LinkField;
+    onClick?: () => void;
+  };
+};
+export const SitecoreButton = ({ fields }: ButtonProps): JSX.Element => {
+  const mode = fields.disableState ? 'cursor-not-allowed' : 'cursor-pointer';
   return (
     <button
       type="button"
       className={[
         'border-2 rounded-lg border-black ',
-        `background-${backgroundColor} storybook-button--${size}`,
+        `background-${fields.backgroundColor} storybook-button--${fields.size}`,
         mode,
       ].join(' ')}
-      {...props}
     >
-      <Link field={link} className={mode} />
+      <Link field={fields.link} className={mode} />
     </button>
   );
 };

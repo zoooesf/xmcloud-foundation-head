@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react';
 
 import { ButtonList } from 'src/components/ButtonList';
-import { Primary as SitecoreButtonStory } from './SitecoreButton.stories';
+import { Default as SitecoreButtonStory } from './SitecoreButton.stories';
 
 const meta = {
   title: 'components/ButtonList',
@@ -13,18 +13,15 @@ const meta = {
 } satisfies Meta<typeof ButtonList>;
 
 export default meta;
-type StoryType = StoryObj<typeof ButtonList>;
+type StoryType = StoryObj<typeof meta>;
 
-const placeholderChildComponent = [
-  {
-    uid: 'anything',
-    ...SitecoreButtonStory.args?.rendering,
-    link: {
-      ...SitecoreButtonStory.args?.link,
-    },
+const placeholderChildComponent = {
+  uid: 'anything',
+  ...SitecoreButtonStory.args.rendering,
+  fields: {
+    ...SitecoreButtonStory.args.fields,
   },
-];
-
+};
 export const Default: StoryType = {
   args: {
     rendering: {
@@ -33,8 +30,8 @@ export const Default: StoryType = {
         RenderingIdentifier: 'ColumnSplitterRenderingIdentifier',
       },
       placeholders: {
-        'button-placeholder1-{*}': [...placeholderChildComponent],
-        'button-placeholder2-{*}': [...placeholderChildComponent],
+        'button-placeholder1-{*}': [placeholderChildComponent],
+        'button-placeholder2-{*}': [placeholderChildComponent],
       },
     },
     params: {

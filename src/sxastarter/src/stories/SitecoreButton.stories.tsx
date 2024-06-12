@@ -11,28 +11,33 @@ const meta = {
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-export const Primary: Story = {
+export const Default: Story = {
   args: {
     rendering: {
-      componentName: 'Sitecore Button',
+      componentName: 'SitecoreButton',
       dataSource: 'truthyValue',
       params: {
         RenderingIdentifier: 'SitecoreButtonRenderingIdentifier',
       },
     },
-    backgroundColor: 'blue',
-    size: 'medium',
-    link: {
-      value: {
-        href: 'https://www.google.ca',
-        title: 'CLICK',
-        target: '_blank',
-        text: 'Normal Button',
-        querystring: '',
-        linktype: 'external',
-      },
+    params: {
+      styles: '',
     },
-    disableState: false,
+    fields: {
+      backgroundColor: 'blue',
+      size: 'medium',
+      link: {
+        value: {
+          href: 'https://www.google.ca',
+          title: 'CLICK',
+          target: '_blank',
+          text: 'Normal Button',
+          querystring: '',
+          linktype: 'external',
+        },
+      },
+      disableState: false,
+    },
   },
 };
 
